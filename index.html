@@ -2,24 +2,49 @@
 
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
 <head>
     <title>DotaBuff</title>
     <script src="plotly-2.16.1.min.js"></script>
 </head>
+<style>
+    table {
+        width: 100%; /* Ширина таблицы */
+        background: white; /* Цвет фона таблицы */
+        color: white; /* Цвет текста */
+        border-spacing: 1px; /* Расстояние между ячейками */
+    }
+    td, th {
+        background: maroon; /* Цвет фона ячеек */
+        padding: 5px; /* Поля вокруг текста */
+    }
+    body {
+        background-image: url(bg.jpg);
+    }
+    button {
+        background-color: #660011;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
 <body>
 
-<h1>DotaBuff project</h1>
-<p>Team members: Vadim Khodko</p>
-<p>Dmytro Maik</p>
-<p>Andrei Hlushchanka</p>
+<h1 style="color: white">DotaBuff project</h1>
+<p style="color: white">Vadim Khodko</p>
+<p style="color: white">Dmytro Maik</p>
+<p style="color: white">Andrei Hlushchanka</p>
 
 <button onclick="upload()">Get users data</button>
 
-<h1>Output data:</h1>
 <p id="users-data-lb"></p>
 
-<div id="chart1" style="width:600px;height:250px;"></div>
+<div id="chart1" style="width:1000px;height:250px;"></div>
 
 <div id="chart2" style="width:600px;height:250px;"></div>
 
